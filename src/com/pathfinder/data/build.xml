@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." default="build">
+	<path id="build.classpath">
+		<pathelement location="classes"/>
+	</path>
+	<target name="init">
+		<mkdir dir="classes"/>
+	</target>
+	<target name="clean">
+		<delete dir="classes"/>
+	</target>
+	<target depends="init" name="build">
+		<javac srcdir="." destdir="classes" source="1.5" target="1.5" fork="yes">
+			<classpath refid="build.classpath"/>
+			<include name="Classes/LevelTable.java"/>
+			<include name="Classes/Barbarian.java"/>
+			<include name="Classes/Bard.java"/>
+			<include name="Classes/Cleric.java"/>
+			<include name="Classes/druid.java"/>
+			<include name="Classes/Fighter.java"/>
+			<include name="Classes/Monk.java"/>
+			<include name="Classes/Paladin.java"/>
+			<include name="Classes/Ranger.java"/>
+			<include name="Classes/Rouge.java"/>
+			<include name="Classes/Sorcerer.java"/>
+			<include name="Classes/Wizard.java"/>
+			<include name="Classes/Alchemist.java"/>
+			<include name="Classes/Cavalier.java"/>
+			<include name="Classes/Gunslinger.java"/>
+			<include name="Classes/Inquisitor.java"/>
+			<include name="Classes/Magus.java"/>
+			<include name="Classes/Oracle.java"/>
+			<include name="Classes/Summoner.java"/>
+			<include name="Classes/Witch.java"/>
+			<include name="Classes/Antipaladin.java"/>
+			<include name="Classes/Ninja.java"/>
+			<include name="Classes/Samurai.java"/>
+			<include name="Classes/HitDice.java"/>
+			<include name="Classes/Class.java"/>
+			<include name="Skills/Skill.java"/>
+			<include name="Attributes/Will.java"/>
+			<include name="Attributes/SaveAttribute.java"/>
+			<include name="Attributes/Reflex.java"/>
+			<include name="Attributes/AttributeName.java"/>
+			<include name="Attributes/Attribute.java"/>
+			<include name="Attributes/Fortitude.java"/>
+			<include name="Spells/Spell.java"/>
+			<include name="Races/Dwarf.java"/>
+			<include name="Races/Elf.java"/>
+			<include name="Races/Gnome.java"/>
+			<include name="Races/Half_Elf.java"/>
+			<include name="Races/Half_Orc.java"/>
+			<include name="Races/Halfling.java"/>
+			<include name="Races/Human.java"/>
+			<include name="Races/VisionType.java"/>
+			<include name="Races/Language.java"/>
+			<include name="Races/Aasimars.java"/>
+			<include name="Races/Catfolk.java"/>
+			<include name="Races/Dhampir.java"/>
+			<include name="Races/Drow.java"/>
+			<include name="Races/Fetchling.java"/>
+			<include name="Races/Goblin.java"/>
+			<include name="Races/Hobgoblin.java"/>
+			<include name="Races/Iftrit.java"/>
+			<include name="Races/Kobold.java"/>
+			<include name="Races/Orc.java"/>
+			<include name="Races/Oread.java"/>
+			<include name="Races/Ratfolk.java"/>
+			<include name="Races/Sylph.java"/>
+			<include name="Races/Tengu.java"/>
+			<include name="Races/Tiefling.java"/>
+			<include name="Races/Undine.java"/>
+			<include name="Races/Changling.java"/>
+			<include name="Races/Duergar.java"/>
+			<include name="Races/Gillmen.java"/>
+			<include name="Races/Grippli.java"/>
+			<include name="Races/Kitsune.java"/>
+			<include name="Races/Merfolk.java"/>
+			<include name="Races/Nagaji.java"/>
+			<include name="Races/Samsaran.java"/>
+			<include name="Races/Strix.java"/>
+			<include name="Races/Suli.java"/>
+			<include name="Races/Svirfneblin.java"/>
+			<include name="Races/Vanaras.java"/>
+			<include name="Races/Vishkanya.java"/>
+			<include name="Races/Wayang.java"/>
+			<include name="Races/Size.java"/>
+			<include name="Races/Race.java"/>
+			<include name="Feats/Feat.java"/>
+			<include name="Items/Weapon.java"/>
+			<include name="Items/Armor.java"/>
+			<include name="Items/Consumables.java"/>
+			<include name="Character/Character.java"/>
+		</javac>
+	</target>
+</project>
