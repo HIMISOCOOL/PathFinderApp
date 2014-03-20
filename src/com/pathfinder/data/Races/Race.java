@@ -15,4 +15,5 @@ public abstract class Race {
 	 */
 	private boolean speedLoss;
 	private VisionType[] visionTypes;
+	private String creatureSubtipe;
 }
