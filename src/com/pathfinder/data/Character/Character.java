@@ -12,8 +12,11 @@ import com.pathfinder.data.Feats.Feat;
 public class Character {
 	private String name;
 	private int level;
-	private int attackRolls;
+	
+//  Why are these needed? mostly the attack rolls but I dont understand your logic for armor value - Matthew	
+//	private int attackRolls;
 	private int armourValue;
+	
 	private Race race;
 	private Attribute[] attributes;
 	private Fortitude fortitudeSave;

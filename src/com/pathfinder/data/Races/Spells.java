@@ -2,7 +2,13 @@ package com.pathfinder.data.Races;
 
 import com.pathfinder.data.Spells.Spell;
 
-public class Spells extends Traits{
+/**
+ * 
+ * @author Joshua Boyd
+ * 
+ * Please explain this to me also josh - Matthew
+ */
+public class Spells extends Trait{
 	private Spell spell;
 	private int amount;
 }

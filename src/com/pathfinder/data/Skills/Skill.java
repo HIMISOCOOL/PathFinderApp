@@ -15,5 +15,7 @@ public class Skill {
 	*the string key identify's what the bonus applies against.
 	*as you display the result of your skill check, it also prints out the result
 	*against certan citera. it's up to the player if that critera applies.
+	*
+	*josh this may need changing, we need to add this to the talk we will have - Matthew
 	**/
 }

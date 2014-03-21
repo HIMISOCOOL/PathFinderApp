@@ -1,5 +1,10 @@
 package com.pathfinder.data.Character;
 
+/**
+ * 
+ * @author Joshua Boyd
+ * please also explain this to me josh - Matthew
+ */
 public class ArmourValue {
 	private int shieldBonus;
 	private int armourBonus;
