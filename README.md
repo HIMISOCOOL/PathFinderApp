@@ -11,7 +11,7 @@ We aim to have a working replacement for all paper and books used by the average
 
 #App Concept
 
- - Replace all parts of the Pathfinder character sheet with the app I.E. stats, skills, saves, armor, weapons
+- Replace all parts of the Pathfinder character sheet with the app I.E. stats, skills, saves, armor, weapons
 - Have all fields possible auto-calculate
 - Each spellcaster has a unique spell list; Manage spells for spellcasters
 - Manage spells per day from spell list
