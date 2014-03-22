@@ -7,8 +7,7 @@ import com.pathfinder.data.Skills.Skill;
  * @author Joshua Boyd
  * Please explain this one to me josh - Matthew
  */
-public class AttackSkills extends Trait{
+public class AttackTrait extends Trait{
 	private String bonusVs;
-	private int attackBonus;
-	private Skill skills[];
+	private int attackBonus;	
 }

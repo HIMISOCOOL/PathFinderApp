@@ -33,8 +33,4 @@ public abstract class Race {
 	 * An array of Vision types applicable to the race
 	 */
 	private VisionType[] visionTypes;
-	/**
-	 * What is this needed for?
-	 */
-	//private String creatureSubtype;
 }

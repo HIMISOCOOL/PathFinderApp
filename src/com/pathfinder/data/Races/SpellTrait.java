@@ -8,7 +8,7 @@ import com.pathfinder.data.Spells.Spell;
  * 
  * Please explain this to me also josh - Matthew
  */
-public class Spells extends Trait{
+public class SpellTrait extends Trait{
 	private Spell spell;
 	private int amount;
 }

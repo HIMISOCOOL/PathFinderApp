@@ -12,11 +12,6 @@ import com.pathfinder.data.Feats.Feat;
 public class Character {
 	private String name;
 	private int level;
-	
-//  Why are these needed? mostly the attack rolls but I dont understand your logic for armor value - Matthew	
-//	private int attackRolls;
-	private int armourValue;
-	
 	private Race race;
 	private Attribute[] attributes;
 	private Fortitude fortitudeSave;
@@ -25,4 +20,8 @@ public class Character {
 	private Class[] classes;
 	private Skill[] skills;
 	private Feat[] feats;
+	/**
+	 * get and set for this will need to take into account all of the relevant bonus'
+	 */
+	private int armorClass;
 }
