@@ -1,5 +1,11 @@
-package com.pathfinder.data.Classes;
+package com.pathfinder.data.Classes.Objects;
 
+/**
+ * 
+ * @author Matthew Meehan
+ * A static class that is used to check if an experience 
+ * value reaches the threshold needed to level up
+ */
 public class AdvancmentTable {
 	public static LevelOption IsLeveled(int expValue, int track) {
 		// Need to externalise this eventually
@@ -25,7 +31,9 @@ public class AdvancmentTable {
 				new LevelOption(19, true, false),
 				new LevelOption(20, false, true) };
 
+		// the result of checking if they have leveled;
 		LevelOption result = levelOptions[0];
+		// Slow track
 		if (track == 0) {
 			if (expValue < 3000)
 				result = levelOptions[0];
@@ -67,7 +75,9 @@ public class AdvancmentTable {
 				result = levelOptions[18];
 			if (expValue >= 5350000)
 				result = levelOptions[19];
-		} else if (track == 1) {
+		}
+		// Medium Track
+		else if (track == 1) {
 			if (expValue < 2000)
 				result = levelOptions[0];
 			if (expValue < 5000)
@@ -108,7 +118,9 @@ public class AdvancmentTable {
 				result = levelOptions[18];
 			if (expValue >= 3600000)
 				result = levelOptions[19];
-		} else if (track == 2) {
+		}
+		// Fast Track
+		else if (track == 2) {
 			if (expValue < 1300)
 				result = levelOptions[0];
 			if (expValue < 3300)

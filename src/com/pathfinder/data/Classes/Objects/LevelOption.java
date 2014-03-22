@@ -1,8 +1,8 @@
-package com.pathfinder.data.Classes;
+package com.pathfinder.data.Classes.Objects;
 
 /**
  * 
- * @author Matthew
+ * @author Matthew Meehan
  * Indicates whether the level has a feat or ability score increase
  */
 public class LevelOption {
@@ -29,6 +29,8 @@ public class LevelOption {
 		return level;
 	}
 
+	public LevelOption(){ };
+	
 	/**
 	 * @param feat
 	 * @param abilityScore
