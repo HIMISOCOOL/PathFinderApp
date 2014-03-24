@@ -7,6 +7,15 @@ package com.pathfinder.data.Classes.Objects;
  */
 public abstract class Feature {
 	private String name;
+	
+	private String description;
+
+	/**
+	 * @return the description
+	 */
+	public String getDescription() {
+		return description;
+	}
 
 	/**
 	 * @return the name
@@ -20,7 +29,8 @@ public abstract class Feature {
 	/**
 	 * @param name
 	 */
-	public Feature(String name) {
+	public Feature(String name, String description) {
 		this.name = name;
+		this.description = description;
 	}
 }
