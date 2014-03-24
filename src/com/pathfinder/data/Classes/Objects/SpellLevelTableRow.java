@@ -12,14 +12,21 @@ import com.pathfinder.data.Spells.Spell;
  * @author Matthew Meehan
  * The table of benefits gained each level from a specific spell casting class
  */
-public class SpellLevelTable extends LevelTable {
+public class SpellLevelTableRow extends LevelTableRow {
 
-	private Spell[][]spellsPerDay;
+	private Spell[] spellsPerDay;
 	
+	/**
+	 * @return the spellsPerDay
+	 */
+	public Spell[] getSpellsPerDay() {
+		return spellsPerDay;
+	}
+
 	/**
 	 * The empty constructor for Kryo
 	 */
-	public SpellLevelTable() { }
+	public SpellLevelTableRow() { }
 
 	/**
 	 * @param baseAttackBonus
@@ -28,11 +35,11 @@ public class SpellLevelTable extends LevelTable {
 	 * @param willSave
 	 * @param specialFeatures
 	 */
-	public SpellLevelTable(int[] baseAttackBonus, Fortitude fortitudeSave,
-			Reflex reflexSave, Will willSave, Feature[] specialFeatures) {
+	public SpellLevelTableRow(int[] baseAttackBonus, Fortitude fortitudeSave,
+			Reflex reflexSave, Will willSave, Feature[] specialFeatures, Spell[] spellsPerDay) {
 		super(baseAttackBonus, fortitudeSave, reflexSave, willSave,
 				specialFeatures);
-		// TODO Auto-generated constructor stub
+		this.spellsPerDay = spellsPerDay;
 	}
 
 }

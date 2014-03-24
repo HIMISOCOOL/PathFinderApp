@@ -7,9 +7,9 @@ import com.pathfinder.data.Attributes.Will;
 /**
  * 
  * @author Matthew Meehan
- * The table of benefits gained each level from a specific class
+ * A row of the table of benefits gained each level from a specific class
  */
-public class LevelTable {
+public class LevelTableRow {
 	private int[] baseAttackBonus;
 	private Fortitude fortitudeSave;
 	private Reflex reflexSave;
@@ -54,7 +54,7 @@ public class LevelTable {
 	/**
 	 * the empty Constructor for Kryo
 	 */
-	public LevelTable() { }
+	public LevelTableRow() { }
 	
 	/**
 	 * @param baseAttackBonus
@@ -63,7 +63,7 @@ public class LevelTable {
 	 * @param willSave
 	 * @param specialFeatures
 	 */
-	public LevelTable(int[] baseAttackBonus, Fortitude fortitudeSave,
+	public LevelTableRow(int[] baseAttackBonus, Fortitude fortitudeSave,
 			Reflex reflexSave, Will willSave, Feature[] specialFeatures) {
 		super();
 		this.baseAttackBonus = baseAttackBonus;
