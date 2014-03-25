@@ -1,6 +1,12 @@
 package com.pathfinder.data.Races;
-import com.pathfinder.data.Spells.Spell;
+
+/**
+ * 
+ * @author Joshua Boyd, Matthew Meehan
+ *
+ */
 
 public class Aasimars extends Race {
 	private Trait traits[];
+	//array of traits the char can have
 }
