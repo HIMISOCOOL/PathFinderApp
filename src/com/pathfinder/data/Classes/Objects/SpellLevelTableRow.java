@@ -3,9 +3,7 @@
  */
 package com.pathfinder.data.Classes.Objects;
 
-import com.pathfinder.data.Attributes.Fortitude;
-import com.pathfinder.data.Attributes.Reflex;
-import com.pathfinder.data.Attributes.Will;
+import com.pathfinder.data.Attributes.SaveAttribute;
 import com.pathfinder.data.Spells.Spell;
 
 /**
@@ -35,8 +33,8 @@ public class SpellLevelTableRow extends LevelTableRow {
 	 * @param willSave
 	 * @param specialFeatures
 	 */
-	public SpellLevelTableRow(int[] baseAttackBonus, Fortitude fortitudeSave,
-			Reflex reflexSave, Will willSave, Feature[] specialFeatures, Spell[] spellsPerDay) {
+	public SpellLevelTableRow(int[] baseAttackBonus, SaveAttribute fortitudeSave,
+			SaveAttribute reflexSave, SaveAttribute willSave, Feature[] specialFeatures, Spell[] spellsPerDay) {
 		super(baseAttackBonus, fortitudeSave, reflexSave, willSave,
 				specialFeatures);
 		this.spellsPerDay = spellsPerDay;

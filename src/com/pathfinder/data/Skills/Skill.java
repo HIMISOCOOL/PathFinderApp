@@ -2,14 +2,14 @@ package com.pathfinder.data.Skills;
 
 import java.util.HashMap;
 
-import com.pathfinder.data.Attributes.AttributeName;
+import com.pathfinder.data.Attributes.AbilityName;
 
 /**
  * @description The skill class
  */
 public class Skill {
 	private int rank;
-	private AttributeName attrToUse;
+	private AbilityName attrToUse;
 	private String name;
 	private boolean trained = false;
 	/**
@@ -31,7 +31,7 @@ public class Skill {
 	/**
 	 * @return the attrToUse
 	 */
-	public AttributeName getAttrToUse() {
+	public AbilityName getAttrToUse() {
 		return attrToUse;
 	}
 
@@ -66,7 +66,7 @@ public class Skill {
 	 * @param trained
 	 * @param situationalMod
 	 */
-	public Skill(int rank, AttributeName attrToUse, String name,
+	public Skill(int rank, AbilityName attrToUse, String name,
 			boolean trained, HashMap<String, Integer> situationalMod) {
 		this.rank = rank;
 		this.attrToUse = attrToUse;

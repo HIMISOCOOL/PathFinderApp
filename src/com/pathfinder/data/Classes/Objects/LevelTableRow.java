@@ -1,8 +1,6 @@
 package com.pathfinder.data.Classes.Objects;
 
-import com.pathfinder.data.Attributes.Fortitude;
-import com.pathfinder.data.Attributes.Reflex;
-import com.pathfinder.data.Attributes.Will;
+import com.pathfinder.data.Attributes.SaveAttribute;
 
 /**
  * 
@@ -11,9 +9,9 @@ import com.pathfinder.data.Attributes.Will;
  */
 public class LevelTableRow {
 	private int[] baseAttackBonus;
-	private Fortitude fortitudeSave;
-	private Reflex reflexSave;
-	private Will willSave;
+	private SaveAttribute fortitudeSave;
+	private SaveAttribute reflexSave;
+	private SaveAttribute willSave;
 	private Feature[] specialFeatures;
 	
 	/**
@@ -26,21 +24,21 @@ public class LevelTableRow {
 	/**
 	 * @return the fortitudeSave
 	 */
-	public Fortitude getFortSave() {
+	public SaveAttribute getFortSave() {
 		return fortitudeSave;
 	}
 
 	/**
 	 * @return the reflexSave
 	 */
-	public Reflex getRefSave() {
+	public SaveAttribute getRefSave() {
 		return reflexSave;
 	}
 
 	/**
 	 * @return the willSave
 	 */
-	public Will getWillSave() {
+	public SaveAttribute getWillSave() {
 		return willSave;
 	}
 
@@ -63,8 +61,8 @@ public class LevelTableRow {
 	 * @param willSave
 	 * @param specialFeatures
 	 */
-	public LevelTableRow(int[] baseAttackBonus, Fortitude fortitudeSave,
-			Reflex reflexSave, Will willSave, Feature[] specialFeatures) {
+	public LevelTableRow(int[] baseAttackBonus, SaveAttribute fortitudeSave,
+			SaveAttribute reflexSave, SaveAttribute willSave, Feature[] specialFeatures) {
 		super();
 		this.baseAttackBonus = baseAttackBonus;
 		this.fortitudeSave = fortitudeSave;
