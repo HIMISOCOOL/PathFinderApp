@@ -15,18 +15,13 @@ import javafx.scene.Node;
 import javafx.scene.layout.Pane;
 
 /**
+ * FXML Controller class
  *
  * @author Matthew
  */
 public class MainController implements Initializable {
-    private String path;
     
-    /**
-     * @param path the path to set
-     */
-    public void setPath(String path) {
-        this.path = path;
-    }
+    private String path;
     
     @FXML
     private Pane mainPane;
@@ -69,8 +64,18 @@ public class MainController implements Initializable {
         mainPane.getChildren().setAll(node);
     }
     
+    public MainController(String path){
+        this.path = path;
+    }
+    
+    /**
+     * Initializes the controller class.
+     * @param url
+     * @param rb
+     */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
+    
 }

@@ -1,27 +1,20 @@
-/**
- * The package for general classes like the main class of the project
- * this main is for the PC gui
- */
-package com.rpg;
 
-import com.rpg.gui.MainController;
-import com.rpg.gui.Window;
+package com.rpg.gui;
+
 import java.io.IOException;
-import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 /**
- * @author Real Standard Studios
  *
+ * @author Matthew
  */
-public class Main extends Application{
+public class GUI{
     final String path = "../../pathfinder/UI/";
-    
-    @Override
-    public void start(Stage stage) throws Exception {
+
+    public void initialize(Stage stage) throws Exception {
         stage.setTitle("Rpg App");
 // Creates the scene and loads the main pane
         stage.setScene(createScene(loadMainPane()));
@@ -37,13 +30,11 @@ public class Main extends Application{
      * @throws IOException if the pane could not be loaded.
      */
     private Pane loadMainPane() throws IOException {
-        FXMLLoader loader = new FXMLLoader();
 
-        Pane mainPane = (Pane) loader.load(
-                getClass().getResourceAsStream("main.fxml"));
+        Pane mainPane;
+        mainPane = FXMLLoader.load(getClass().getResource("main.fxml"));
 
-        MainController mainController = loader.getController();
-        mainController.setPath(path);
+        MainController mainController = new MainController(path);
         Window.setMainController(mainController);
         Window.swap(path+"characterFluff.fxml");
 
@@ -62,11 +53,5 @@ public class Main extends Application{
 //Uncomment if using a stylesheet        
 //        scene.getStylesheets().setAll(getClass().getResource("vista.css").toExternalForm());
         return scene;
-    }
-    /**
-     * @param args
-     */
-    public static void main(String[] args) {
-        launch(args);
     }
 }
