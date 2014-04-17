@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1100.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <children>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="698.0" layoutX="0.0" layoutY="1.0" stroke="BLACK" strokeType="INSIDE" width="1100.0" />
+    <Separator layoutX="261.0" layoutY="53.0" orientation="VERTICAL" prefHeight="233.0" />
+    <Separator layoutX="28.0" layoutY="53.0" prefWidth="499.0" />
+    <Separator layoutX="28.0" layoutY="95.0" prefWidth="499.0" />
+    <Separator layoutX="28.0" layoutY="136.0" prefWidth="499.0" />
+    <Separator layoutX="28.0" layoutY="176.0" prefWidth="499.0" />
+    <Separator layoutX="28.0" layoutY="213.0" prefWidth="499.0" />
+    <Separator layoutX="26.0" layoutY="253.0" prefWidth="499.0" />
+    <Label alignment="CENTER_LEFT" layoutX="269.0" layoutY="57.0" prefHeight="30.0" prefWidth="125.0" text="Gender:" textAlignment="LEFT" wrapText="false">
+      <font>
+        <Font name="System Bold" size="18.0" fx:id="x1" />
+      </font>
+    </Label>
+    <Label alignment="CENTER_LEFT" contentDisplay="LEFT" font="$x1" layoutX="14.0" layoutY="17.0" prefHeight="30.0" prefWidth="150.0" text="Character Name:" textAlignment="LEFT" wrapText="false" />
+    <Label alignment="CENTER_LEFT" font="$x1" layoutX="14.0" layoutY="57.0" prefHeight="30.0" prefWidth="125.0" text="Race:" textAlignment="LEFT" wrapText="false" />
+    <Label alignment="CENTER_LEFT" font="$x1" layoutX="14.0" layoutY="97.0" prefHeight="30.0" prefWidth="111.0" text="Alignment:" textAlignment="LEFT" wrapText="false" />
+    <Label alignment="CENTER_LEFT" font="$x1" layoutX="14.0" layoutY="137.0" prefHeight="30.0" prefWidth="111.0" text="Deities:" textAlignment="LEFT" wrapText="false" />
+    <Label alignment="CENTER_LEFT" font="$x1" layoutX="14.0" layoutY="177.0" prefHeight="30.0" prefWidth="100.0" text="Size:" textAlignment="LEFT" wrapText="false" />
+    <Label alignment="CENTER_LEFT" font="$x1" layoutX="14.0" layoutY="217.0" prefHeight="30.0" prefWidth="111.0" text="Height:" textAlignment="LEFT" wrapText="false" />
+    <Label layoutX="164.0" layoutY="17.0" prefHeight="30.0" prefWidth="100.0" text="Audrey" textAlignment="LEFT" wrapText="false">
+      <font>
+        <Font size="18.0" fx:id="x2" />
+      </font>
+    </Label>
+    <Label font="$x2" layoutX="404.0" layoutY="57.0" prefHeight="30.0" prefWidth="100.0" text="Female" textAlignment="LEFT" wrapText="false" />
+    <Label font="$x2" layoutX="404.0" layoutY="97.0" prefHeight="30.0" prefWidth="140.0" text="Whangarei" textAlignment="LEFT" wrapText="false" />
+    <Label font="$x2" layoutX="404.0" layoutY="137.0" prefHeight="30.0" prefWidth="100.0" text="Puppy" textAlignment="LEFT" wrapText="false" />
+    <Label font="$x2" layoutX="404.0" layoutY="177.0" prefHeight="30.0" prefWidth="100.0" text="3" textAlignment="LEFT" wrapText="false" />
+    <Label font="$x2" layoutX="404.0" layoutY="217.0" prefHeight="30.0" prefWidth="100.0" text="26kg" textAlignment="LEFT" wrapText="false" />
+    <Label alignment="CENTER_LEFT" font="$x1" layoutX="269.0" layoutY="97.0" prefHeight="30.0" prefWidth="140.0" text="Homeland:" textAlignment="LEFT" wrapText="false" />
+    <Label alignment="CENTER_LEFT" font="$x1" layoutX="269.0" layoutY="137.0" prefHeight="30.0" prefWidth="140.0" text="Background:" textAlignment="LEFT" wrapText="false" />
+    <Label alignment="CENTER_LEFT" font="$x1" layoutX="269.0" layoutY="177.0" prefHeight="30.0" prefWidth="140.0" text="Age:" textAlignment="LEFT" wrapText="false" />
+    <Label alignment="CENTER_LEFT" font="$x1" layoutX="269.0" layoutY="217.0" prefHeight="30.0" prefWidth="140.0" text="Weight:" textAlignment="LEFT" wrapText="false" />
+    <Label alignment="CENTER_LEFT" font="$x1" layoutX="269.0" layoutY="257.0" prefHeight="30.0" prefWidth="140.0" text="Eye colour:" textAlignment="LEFT" wrapText="false" />
+    <Label alignment="CENTER_LEFT" font="$x2" layoutX="404.0" layoutY="257.0" prefHeight="30.0" prefWidth="140.0" text="colour" textAlignment="LEFT" wrapText="false" />
+    <Label alignment="CENTER_LEFT" font="$x1" layoutX="14.0" layoutY="257.0" prefHeight="30.0" prefWidth="111.0" text="Hair:" textAlignment="LEFT" wrapText="false" />
+    <Label font="$x2" layoutX="125.0" layoutY="56.0" prefHeight="30.0" prefWidth="136.0" text="Dog" textAlignment="LEFT" wrapText="false" />
+    <Label font="$x2" layoutX="125.0" layoutY="96.0" prefHeight="30.0" prefWidth="136.0" text="Chaotic Good" textAlignment="LEFT" wrapText="false" />
+    <Label font="$x2" layoutX="125.0" layoutY="136.0" prefHeight="30.0" prefWidth="136.0" text="Toys, Water" textAlignment="LEFT" wrapText="false" />
+    <Label font="$x2" layoutX="125.0" layoutY="176.0" prefHeight="30.0" prefWidth="136.0" text="Medium" textAlignment="LEFT" wrapText="false" />
+    <Label font="$x2" layoutX="125.0" layoutY="216.0" prefHeight="30.0" prefWidth="136.0" text="60cm" textAlignment="LEFT" wrapText="false" />
+    <Label font="$x2" layoutX="125.0" layoutY="256.0" prefHeight="30.0" prefWidth="140.0" text="hair" textAlignment="LEFT" wrapText="false" />
+    <Label font="$x2" layoutX="125.0" layoutY="286.0" prefHeight="30.0" prefWidth="140.0" text="languages" textAlignment="LEFT" wrapText="false" />
+    <Label alignment="CENTER_LEFT" font="$x1" layoutX="14.0" layoutY="286.0" prefHeight="30.0" prefWidth="111.0" text="Languages:" textAlignment="LEFT" wrapText="false" />
+    <TitledPane animated="false" collapsible="false" expanded="true" layoutX="14.0" layoutY="374.0" prefHeight="312.0" prefWidth="513.0" text="Classes">
+      <content>
+        <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" opacity="1.0" prefHeight="180.0" prefWidth="200.0">
+          <children>
+            <Label alignment="TOP_LEFT" font="$x1" layoutX="14.0" layoutY="6.0" text="Favored Class:" />
+            <Label alignment="TOP_LEFT" font="$x2" layoutX="147.0" layoutY="6.0" prefWidth="125.0" text="Dog" />
+            <Label alignment="TOP_LEFT" font="$x1" layoutX="14.0" layoutY="30.0" text="Archetype:" />
+            <Separator layoutX="287.0" layoutY="0.0" orientation="VERTICAL" prefHeight="286.0" />
+            <Label alignment="TOP_LEFT" font="$x1" layoutX="303.0" layoutY="6.0" text="Experience:" />
+            <Label alignment="TOP_LEFT" font="$x2" layoutX="410.0" layoutY="6.0" prefWidth="85.0" text="9,000" />
+            <Label alignment="TOP_LEFT" font="$x1" layoutX="303.0" layoutY="30.0" text="Next Level:" />
+            <Label alignment="TOP_LEFT" font="$x2" layoutX="147.0" layoutY="30.0" prefWidth="125.0" text="Retriever" />
+            <Separator layoutX="14.0" layoutY="63.0" prefWidth="481.0" />
+            <Label alignment="TOP_LEFT" font="$x2" layoutX="410.0" layoutY="30.0" prefWidth="85.0" text="10,000" />
+            <Label alignment="TOP_LEFT" font="$x1" layoutX="14.0" layoutY="75.0" prefWidth="258.0" text="Classes:" />
+            <Label alignment="TOP_LEFT" font="$x1" layoutX="303.0" layoutY="75.0" prefWidth="192.0" text="Levels:" />
+            <Label font="$x2" layoutX="14.0" layoutY="108.0" prefWidth="258.0" text="Dog" />
+            <Label font="$x2" layoutX="303.0" layoutY="108.0" text="3" />
+          </children>
+        </AnchorPane>
+      </content>
+    </TitledPane>
+    <Button layoutX="961.0" layoutY="656.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="125.0" text="Change Details" />
+    <ImageView fitHeight="338.25" fitWidth="451.0" layoutX="635.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@audrey.JPG" />
+      </image>
+    </ImageView>
+  </children>
+</AnchorPane>

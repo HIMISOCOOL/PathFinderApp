@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" depthTest="INHERIT" prefHeight="700.0" prefWidth="1100.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <children>
+    <Button fx:id="btnConfimAction" layoutX="879.0" layoutY="14.0" mnemonicParsing="false" prefWidth="205.00009999999747" text="Confirm Action">
+      <font>
+        <Font name="System Bold" size="14.0" fx:id="x1" />
+      </font>
+    </Button>
+    <TitledPane id="paneQueuedActions" fx:id="queuedActions" animated="false" font="$x1" layoutX="878.0" layoutY="52.0" prefWidth="205.0" text="Queued Actions">
+      <content>
+        <AnchorPane id="Content" fx:id="paneQueuedActions" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+          <children>
+            <Button layoutX="142.0" layoutY="145.0" mnemonicParsing="false" text="Roll" />
+            <TextField layoutX="14.0" layoutY="14.0" prefWidth="119.0" text="Power Attack" />
+            <TextField layoutX="142.0" layoutY="14.0" prefWidth="45.0" />
+            <TextField layoutX="14.0" layoutY="47.0" prefWidth="119.0" text="Power Attack" />
+            <TextField layoutX="142.0" layoutY="47.0" prefWidth="45.0" />
+            <TextField layoutX="14.0" layoutY="76.0" prefWidth="119.0" text="Power Attack" />
+            <TextField layoutX="142.0" layoutY="76.0" prefWidth="45.0" />
+          </children>
+        </AnchorPane>
+      </content>
+    </TitledPane>
+    <TitledPane fx:id="paneActionOptions" animated="false" collapsible="false" font="$x1" layoutX="267.0" layoutY="14.0" prefHeight="670.0" text="Action Options">
+      <content>
+        <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="648.0" prefWidth="200.0">
+          <children>
+            <TextField fx:id="txtMelee" layoutX="0.0" layoutY="0.0" prefWidth="200.0" text="Standard Melee" />
+            <TextField fx:id="txtRanges" layoutX="1.0" layoutY="22.0" prefWidth="200.0" text="Standard Ranged" />
+            <TextField id="txtMelee" layoutX="1.0" layoutY="44.0" prefWidth="200.0" text="Power Attack" />
+            <TextField id="txtRanges" layoutX="2.0" layoutY="66.0" prefWidth="200.0" text="Unarmed" />
+          </children>
+        </AnchorPane>
+      </content>
+    </TitledPane>
+    <TitledPane fx:id="paneActions" animated="false" collapsible="false" font="$x1" layoutX="14.0" layoutY="14.0" prefHeight="672.0" text="Actions">
+      <content>
+        <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+          <children>
+            <Accordion layoutX="-2.0" layoutY="0.0" prefHeight="646.0">
+              <expandedPane>
+                <TitledPane fx:id="paneImmediate" animated="false" text="Immediate">
+                  <content>
+                    <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                  </content>
+                  <font>
+                    <Font name="System Italic" size="14.0" fx:id="x2" />
+                  </font>
+                </TitledPane>
+              </expandedPane>
+              <panes>
+                <TitledPane fx:id="paneStandard" animated="false" font="$x2" text="Standard">
+                  <content>
+                    <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                      <children>
+                        <TextField fx:id="txtStandardAttack" layoutX="1.0" layoutY="3.0" prefWidth="200.0" text="Attack" />
+                        <TextField fx:id="txtCastSpell" layoutX="1.0" layoutY="25.0" prefWidth="200.0" text="Cast Spell" />
+                      </children>
+                    </AnchorPane>
+                  </content>
+                </TitledPane>
+                <TitledPane fx:id="paneMove" animated="false" font="$x2" text="Move">
+                  <content>
+                    <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                  </content>
+                </TitledPane>
+                <TitledPane fx:id="paneFullRound" animated="false" font="$x2" text="Full Round">
+                  <content>
+                    <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                  </content>
+                </TitledPane>
+                <TitledPane fx:id="paneSwift" animated="false" font="$x2" text="Swift">
+                  <content>
+                    <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                  </content>
+                </TitledPane>
+                <fx:reference source="paneImmediate" />
+                <TitledPane fx:id="paneFree" animated="false" expanded="false" font="$x2" text="Free">
+                  <content>
+                    <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                  </content>
+                </TitledPane>
+              </panes>
+            </Accordion>
+          </children>
+        </AnchorPane>
+      </content>
+    </TitledPane>
+    <TitledPane fx:id="paneStats" animated="false" collapsible="false" font="$x1" layoutX="524.0" layoutY="14.0" prefHeight="668.0" prefWidth="284.0" text="Stats, modifiers and stuff">
+      <content>
+        <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="290.0" prefWidth="280.0">
+          <children>
+            <TextArea fx:id="txtStats" layoutX="14.0" layoutY="14.0" prefWidth="252.0" text="This will show all the stats etc and how they change depending what you choose to do&#10;" wrapText="true" />
+          </children>
+        </AnchorPane>
+      </content>
+    </TitledPane>
+    <TitledPane animated="false" collapsible="false" layoutX="882.0" layoutY="331.0" minWidth="200.0" prefHeight="349.0" prefWidth="200.0" text="Event Log (or some such)">
+      <content>
+        <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+          <children>
+            <TextField layoutX="14.0" layoutY="14.0" prefWidth="174.0" text="Audrey: Growl" />
+            <TextField layoutX="14.0" layoutY="36.0" prefWidth="174.0" text="Charizard: Flamethrower" />
+          </children>
+        </AnchorPane>
+      </content>
+    </TitledPane>
+    <Button fx:id="btnEndTurn" layoutX="880.0" layoutY="273.0" mnemonicParsing="false" prefWidth="205.0" text="End Turn">
+      <font>
+        <Font name="System Bold" size="16.0" />
+      </font>
+    </Button>
+  </children>
+  <padding>
+    <Insets />
+  </padding>
+</AnchorPane>
