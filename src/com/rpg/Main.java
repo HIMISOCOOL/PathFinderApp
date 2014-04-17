@@ -18,6 +18,8 @@ import javafx.stage.Stage;
  *
  */
 public class Main extends Application{
+    final String path = "../../pathfinder/UI/";
+    
     @Override
     public void start(Stage stage) throws Exception {
         stage.setTitle("Rpg App");
@@ -37,12 +39,13 @@ public class Main extends Application{
     private Pane loadMainPane() throws IOException {
         FXMLLoader loader = new FXMLLoader();
 
-        Pane mainPane = (Pane) loader.load(getClass().getResourceAsStream("main.fxml"));
+        Pane mainPane = (Pane) loader.load(
+                getClass().getResourceAsStream("main.fxml"));
 
         MainController mainController = loader.getController();
-
+        mainController.setPath(path);
         Window.setMainController(mainController);
-        Window.swap("windows/characterFluff.fxml");
+        Window.swap(path+"characterFluff.fxml");
 
         return mainPane;
     }
@@ -64,6 +67,6 @@ public class Main extends Application{
      * @param args
      */
     public static void main(String[] args) {
-        
+        launch(args);
     }
 }

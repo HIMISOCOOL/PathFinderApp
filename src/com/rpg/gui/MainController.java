@@ -19,7 +19,15 @@ import javafx.scene.layout.Pane;
  * @author Matthew
  */
 public class MainController implements Initializable {
-    final String path = "../com/pathfinder/UI/";
+    private String path;
+    
+    /**
+     * @param path the path to set
+     */
+    public void setPath(String path) {
+        this.path = path;
+    }
+    
     @FXML
     private Pane mainPane;
     
@@ -29,23 +37,23 @@ public class MainController implements Initializable {
     }
     @FXML
     private void handleCharacterAction(ActionEvent event) {
-        Window.swap("../com/pathfinder/UI/characterFluff.fxml");
+        Window.swap(path+"characterFluff.fxml");
     }
     @FXML
     private void handleCombatAction(ActionEvent event) {
-       Window.swap("../com/pathfinder/UI/combatStats.fxml");
+       Window.swap(path+"combatStats.fxml");
     }
     @FXML
     private void handleInventoryAction(ActionEvent event) {
-        Window.swap("../com/pathfinder/UI/inventory.fxml");
+        Window.swap(path+"inventory.fxml");
     }
     @FXML
     private void handleSkillAction(ActionEvent event) {
-        Window.swap("../com/pathfinder/UI/skills.fxml");
+        Window.swap(path+"skills.fxml");
     }
     @FXML
     private void handleSpellAction(ActionEvent event) {
-        Window.swap("windows/spells.fxml");
+        Window.swap(path+"spells.fxml");
     }
     @FXML
     private void handleOptionAction(ActionEvent event) {
@@ -65,5 +73,4 @@ public class MainController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
-    
 }
