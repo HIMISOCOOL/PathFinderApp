@@ -4,8 +4,8 @@
  */
 package com.rpg;
 
-import com.rpg.PCUI.MainController;
-import com.rpg.PCUI.Window;
+import com.rpg.gui.MainController;
+import com.rpg.gui.Window;
 import java.io.IOException;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

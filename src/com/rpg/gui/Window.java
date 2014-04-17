@@ -1,4 +1,4 @@
-package com.rpg.PCUI;
+package com.rpg.gui;
 
 import javafx.fxml.FXMLLoader;
 

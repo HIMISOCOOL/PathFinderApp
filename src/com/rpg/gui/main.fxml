@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1280.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="javafxtestui.MainController">
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1280.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.rpg.gui.MainController">
   <children>
     <Button id="menuButton" layoutX="15.0" layoutY="21.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#handleMenuAction" prefHeight="50.0" prefWidth="50.0" text="Menu">
       <font>
