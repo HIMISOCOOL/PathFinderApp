@@ -4,7 +4,7 @@
  */
 
 
-import com.rpg.gui.GUI;
+import rpg.gui.GUI;
 import javafx.application.Application;
 import javafx.stage.Stage;
 
