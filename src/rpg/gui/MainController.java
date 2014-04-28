@@ -40,7 +40,7 @@ public class MainController implements Initializable {
 //        Window.swap(path+"characterFluff.fxml");
     }
     @FXML
-    private void handleCombatAction(ActionEvent event) {
+    private void handleCombatStatsAction(ActionEvent event) {
         windows.get(1).windowInView();
 //       Window.swap(path+"combatStats.fxml");
     }
@@ -50,18 +50,23 @@ public class MainController implements Initializable {
 //        Window.swap(path+"inventory.fxml");
     }
     @FXML
-    private void handleSkillAction(ActionEvent event) {
+    private void handleSkillsAction(ActionEvent event) {
         windows.get(3).windowInView();
 //        Window.swap(path+"skills.fxml");
     }
     @FXML
-    private void handleSpellAction(ActionEvent event) {
+    private void handleSpellsAction(ActionEvent event) {
         windows.get(4).windowInView();
 //        Window.swap(path+"spells.fxml");
     }
     @FXML
     private void handleOtherCharacterAction(ActionEvent event) {
         windows.get(5).windowInView();
+    }
+    
+    @FXML
+    private void handleCombatAction(ActionEvent event) {
+        windows.get(6).windowInView();
     }
     
     /**

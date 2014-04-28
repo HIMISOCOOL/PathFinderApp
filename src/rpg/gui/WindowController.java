@@ -56,7 +56,7 @@ public abstract class WindowController implements Initializable{
         try {
             FXMLLoader l = new FXMLLoader(getClass().getResource(GUI.path+fxml));
             l.setController(this);
-            this.pane = l.load();
+            this.pane = (Pane) l.load();
         } catch (IOException ex) {
             Logger.getLogger(WindowController.class.getName()).log(Level.SEVERE, null, ex);
         }
