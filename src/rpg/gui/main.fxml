@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.input.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+    <children>
+    <Button id="menuButton" layoutX="15.0" layoutY="21.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#handleMenuAction" prefHeight="50.0" prefWidth="50.0" text="Menu">
+      <font>
+        <Font size="10.0" fx:id="x1" />
+      </font>
+    </Button>
+    <Pane id="leftSideMenu" disable="false" layoutX="0.0" layoutY="71.0" prefHeight="729.0" prefWidth="162.0" visible="true">
+      <children>
+        <Label id="characterName" fx:id="characterName" layoutX="14.0" layoutY="42.0" prefWidth="134.0" text="Character Name">
+          <font>
+            <Font size="16.0" />
+          </font>
+        </Label>
+        <Group id="leftMenuButtons" layoutX="14.0" layoutY="31.0">
+          <children>
+            <Button id="charactersButton" layoutX="0.0" layoutY="39.0" mnemonicParsing="false" onAction="#handleCharacterAction" pickOnBounds="false" prefHeight="34.960837500002526" prefWidth="134.0" text="Character" />
+            <Button id="combatStatsButton" layoutX="0.0" layoutY="79.0" mnemonicParsing="false" onAction="#handleCombatAction" prefHeight="34.960837500002526" prefWidth="134.00009999999747" text="Combat Stats" />
+            <Button id="skillsButton" layoutX="0.0" layoutY="119.0" mnemonicParsing="false" onAction="#handleSkillAction" prefHeight="34.960837500002526" prefWidth="134.0" text="Skills" />
+            <Button id="inventoryButton" layoutX="0.0" layoutY="159.0" mnemonicParsing="false" onAction="#handleInventoryAction" prefHeight="34.9609375" prefWidth="134.0" text="Inventory" />
+            <Button id="spellsButton" layoutX="0.0" layoutY="199.0" mnemonicParsing="false" onAction="#handleSkillAction" prefHeight="34.9609375" prefWidth="134.0" text="Spells" />
+            <Button id="otherCharacter" layoutX="0.0" layoutY="649.0" mnemonicParsing="false" onAction="#handleOtherCharacterAction" prefHeight="34.9609459472631" prefWidth="134.0" text="Other Character" wrapText="true">
+              <font>
+                <Font size="12.0" />
+              </font>
+            </Button>
+          </children>
+        </Group>
+      </children>
+    </Pane>
+    <Pane fx:id="mainPane" layoutX="162.0" layoutY="75.0" prefHeight="700.0" prefWidth="1100.0" /><MenuButton layoutX="1159.87109375" layoutY="14.0" mnemonicParsing="false" text="Options">
+  <items>
+    <MenuItem mnemonicParsing="false" text="Option 1">
+<accelerator>
+<KeyCodeCombination alt="ANY" code="N" control="UP" meta="UP" shift="UP" shortcut="UP" />
+</accelerator></MenuItem>
+    <MenuItem mnemonicParsing="false" text="Option 2" />
+  </items>
+</MenuButton>
+  </children>
+</AnchorPane>

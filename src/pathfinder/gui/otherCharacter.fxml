@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<children><Accordion layoutX="41.0" layoutY="33.0">
+  <panes>
+    <TitledPane animated="false" prefHeight="97.0" prefWidth="374.0" text="No Other Characters">
+<font>
+<Font size="15.0" />
+</font></TitledPane>
+  </panes>
+</Accordion><Button layoutX="41.0" layoutY="646.0" mnemonicParsing="false" text="Load Other Character">
+<font>
+<Font name="System Bold" size="15.0" />
+</font></Button><Button layoutX="228.0" layoutY="646.0" mnemonicParsing="false" onAction="#handleNewCharacterAction" text="New Character">
+<font>
+<Font name="System Bold" size="15.0" />
+</font></Button>
+</children></AnchorPane>
