@@ -69,6 +69,16 @@ public class MainController implements Initializable {
         windows.get(6).windowInView();
     }
     
+    @FXML
+    private void handleNewCharacterAction(ActionEvent event) {
+        windows.get(7).windowInView();
+    }
+    
+    @FXML
+    private void handleFeatsAction(ActionEvent event) {
+        windows.get(8).windowInView();
+    }
+    
     /**
      * Replaces the vista displayed in the vista holder with a new vista.
      *
@@ -94,6 +104,7 @@ public class MainController implements Initializable {
         windows.add(new OtherCharacterController(this, "otherCharacter.fxml"));//5
         windows.add(new CombatController(this, "combat.fxml"));//6
         windows.add(new NewCharacterController(this, "newCharacter.fxml"));//7
+        windows.add(new FeatsController(this, "feats.fxml")); //8
         for (WindowController windowController : windows) {
             windowController.loadPane();
         }
