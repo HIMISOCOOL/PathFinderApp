@@ -39,7 +39,7 @@ public class Data {
 
 	public static <T> T Read(String FileName, Class<T> Class)
 			throws FileNotFoundException {
-		input = new Input(new FileInputStream(FileName.toString()));
+		input = new Input(new FileInputStream(FileName));
 		T result = kryo.readObject(input, Class);
 		if (input != null)
 			input.close();

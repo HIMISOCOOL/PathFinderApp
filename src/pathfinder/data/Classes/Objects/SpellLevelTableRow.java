@@ -12,32 +12,33 @@ import pathfinder.data.Spells.Spell;
  */
 public class SpellLevelTableRow extends LevelTableRow {
 
-	private Spell[] spellsPerDay;
-	
-	/**
-	 * @return the spellsPerDay
-	 */
-	public Spell[] getSpellsPerDay() {
-		return spellsPerDay;
-	}
+    private Spell[] spellsPerDay;
 
-	/**
-	 * The empty constructor for Kryo
-	 */
-	public SpellLevelTableRow() { }
+    /**
+     * @return the spellsPerDay
+     */
+    public Spell[] getSpellsPerDay() {
+        return spellsPerDay;
+    }
 
-	/**
-	 * @param baseAttackBonus
-	 * @param fortitudeSave
-	 * @param reflexSave
-	 * @param willSave
-	 * @param specialFeatures
-	 */
-	public SpellLevelTableRow(int[] baseAttackBonus, SaveAttribute fortitudeSave,
-			SaveAttribute reflexSave, SaveAttribute willSave, Feature[] specialFeatures, Spell[] spellsPerDay) {
-		super(baseAttackBonus, fortitudeSave, reflexSave, willSave,
-				specialFeatures);
-		this.spellsPerDay = spellsPerDay;
-	}
+    /**
+     * The empty constructor for Kryo
+     */
+    public SpellLevelTableRow() { }
+
+    /**
+     * @param baseAttackBonus
+     * @param fortitudeSave
+     * @param reflexSave
+     * @param willSave
+     * @param specialFeatures
+     * @param spellsPerDay
+     */
+    public SpellLevelTableRow(int[] baseAttackBonus, SaveAttribute fortitudeSave,
+                    SaveAttribute reflexSave, SaveAttribute willSave, Feature[] specialFeatures, Spell[] spellsPerDay) {
+        super(baseAttackBonus, fortitudeSave, reflexSave, willSave,
+                            specialFeatures);
+        this.spellsPerDay = spellsPerDay;
+    }
 
 }
