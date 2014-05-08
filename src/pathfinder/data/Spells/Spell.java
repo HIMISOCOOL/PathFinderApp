@@ -2,6 +2,11 @@ package pathfinder.data.Spells;
 
 import pathfinder.data.Attributes.SaveAttribute;
 
+/**
+ * @author Real Standard Studios - Matthew Meehan
+ * @description A data class for the varied Spells available
+ */
+
 public class Spell {
 	private String school;
 	private int castingTime;
@@ -29,7 +34,7 @@ public class Spell {
 	}
 	/**
 	 * @return the range
-	 * @param the level of the caster
+	 * @param level
 	 */
 	public int getRange(int level) {
 		return this.range+(this.rangePerLevel*level);
@@ -77,6 +82,9 @@ public class Spell {
 		return name;
 	}
 	
+        /**
+         * Empty constructor for Kryo
+         */
 	public Spell() {}
 	
 	/**
@@ -90,6 +98,8 @@ public class Spell {
 	 * @param spellResistance
 	 * @param description
 	 * @param name
+         * 
+         * Constructor for Spell
 	 */
 	public Spell(String school, int castingTime, int range, int rangePerLevel,
 			String effect, int duration, SaveAttribute savingThrow,

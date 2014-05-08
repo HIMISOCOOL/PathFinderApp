@@ -2,8 +2,9 @@ package pathfinder.data.Attributes;
 
 /**
  * 
- * @author Matthew Meehan
- *
+ * @author Real Standard Studios - Matthew Meehan
+ * 
+ * Base class used for each of the 6 Ability Scores
  */
 public class Ability {
 	private int value;
@@ -37,7 +38,10 @@ public class Ability {
 	public Ability() {}
 
 	/**
+         * @param abilityName
 	 * @param value
+         * 
+         * Constructor for the Ability class
 	 */
 	public Ability(AbilityName abilityName,int value) {
 		this.abilityName = abilityName;
