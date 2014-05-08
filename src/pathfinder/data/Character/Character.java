@@ -27,6 +27,7 @@ public class Character {
 	private Skill[] skills;
 	private Feat[] feats;
 	private Inventory inventory;
+        private Alignment alignment;
 
 	/**
 	 * get and set for this will need to take into account all of the relevant
@@ -486,5 +487,19 @@ public class Character {
 	 */
 	public Character() {
 	}
+
+    /**
+     * @return the alignment
+     */
+    public Alignment getAlignment() {
+        return alignment;
+    }
+
+    /**
+     * @param alignment the alignment to set
+     */
+    public void setAlignment(Alignment alignment) {
+        this.alignment = alignment;
+    }
 
 }
