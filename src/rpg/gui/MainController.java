@@ -1,9 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package rpg.gui;
 
 import java.net.URL;
@@ -37,27 +31,22 @@ public class MainController implements Initializable {
     @FXML
     private void handleCharacterAction(ActionEvent event) {
         windows.get(0).windowInView();
-//        Window.swap(path+"characterFluff.fxml");
     }
     @FXML
     private void handleCombatStatsAction(ActionEvent event) {
         windows.get(1).windowInView();
-//       Window.swap(path+"combatStats.fxml");
     }
     @FXML
     private void handleInventoryAction(ActionEvent event) {
         windows.get(2).windowInView();
-//        Window.swap(path+"inventory.fxml");
     }
     @FXML
     private void handleSkillsAction(ActionEvent event) {
         windows.get(3).windowInView();
-//        Window.swap(path+"skills.fxml");
     }
     @FXML
     private void handleSpellsAction(ActionEvent event) {
         windows.get(4).windowInView();
-//        Window.swap(path+"spells.fxml");
     }
     @FXML
     private void handleOtherCharacterAction(ActionEvent event) {
