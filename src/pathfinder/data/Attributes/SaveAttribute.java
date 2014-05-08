@@ -10,6 +10,7 @@ public class SaveAttribute {
 	private int total;
 	private int magicMod;
 	private int miscMod;
+        private Ability abilityScore;
 
 	/**
 	 * @return the baseValue
@@ -32,8 +33,8 @@ public class SaveAttribute {
 		return total;
 	}
 
-	public void setTotal(Ability pAbility) {
-		this.total = pAbility.getModifier()+this.magicMod+this.miscMod;
+	public void setTotal() {
+		this.total = this.abilityScore.getModifier()+this.magicMod+this.miscMod;
 	}
 
 	/**
@@ -67,16 +68,17 @@ public class SaveAttribute {
 	public SaveAttribute() {}	
 
 	/**
+         * @param pAbility
 	 * @param baseValue
 	 * @param magicMod
 	 * @param miscMod
 	 */
 	public SaveAttribute(Ability pAbility, int baseValue, int magicMod, int miscMod) {
-		super();
 		this.baseValue = baseValue;
 		this.magicMod = magicMod;
 		this.miscMod = miscMod;
-		this.setTotal(pAbility);
+                this.abilityScore = pAbility;
+		this.setTotal();
 	}
 	
 	

@@ -41,7 +41,7 @@ public class GUI{
         
         l.setController(mainController);
         
-        Pane mainPane = l.load();
+        Pane mainPane = (Pane) l.load();
 
         return mainPane;
     }

@@ -33,7 +33,7 @@ public class MainController implements Initializable {
         windows.get(0).windowInView();
     }
     @FXML
-    private void handleCombatAction(ActionEvent event) {
+    private void handleCombatStatsAction(ActionEvent event) {
         windows.get(1).windowInView();
     }
     @FXML
@@ -41,16 +41,31 @@ public class MainController implements Initializable {
         windows.get(2).windowInView();
     }
     @FXML
-    private void handleSkillAction(ActionEvent event) {
+    private void handleSkillsAction(ActionEvent event) {
         windows.get(3).windowInView();
     }
     @FXML
-    private void handleSpellAction(ActionEvent event) {
+    private void handleSpellsAction(ActionEvent event) {
         windows.get(4).windowInView();
     }
     @FXML
     private void handleOtherCharacterAction(ActionEvent event) {
         windows.get(5).windowInView();
+    }
+    
+    @FXML
+    private void handleCombatAction(ActionEvent event) {
+        windows.get(6).windowInView();
+    }
+    
+    @FXML
+    private void handleNewCharacterAction(ActionEvent event) {
+        windows.get(7).windowInView();
+    }
+    
+    @FXML
+    private void handleFeatsAction(ActionEvent event) {
+        windows.get(8).windowInView();
     }
     
     /**
@@ -78,6 +93,7 @@ public class MainController implements Initializable {
         windows.add(new OtherCharacterController(this, "otherCharacter.fxml"));//5
         windows.add(new CombatController(this, "combat.fxml"));//6
         windows.add(new NewCharacterController(this, "newCharacter.fxml"));//7
+        windows.add(new FeatsController(this, "feats.fxml")); //8
         for (WindowController windowController : windows) {
             windowController.loadPane();
         }
