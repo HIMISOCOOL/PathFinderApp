@@ -14,7 +14,7 @@ import com.esotericsoftware.kryo.io.Input;
 import com.esotericsoftware.kryo.io.Output;
 
 /**
- * @author Matthew
+ * @author Real Standard Studios - Matthew Meehan
  * @description A static Class that reads and writes other objects
  */
 public class Data {
