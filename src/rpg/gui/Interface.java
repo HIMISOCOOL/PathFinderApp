@@ -10,7 +10,7 @@ import javafx.stage.Stage;
  *
  * @author Matthew
  */
-public class GUI extends JefXif.GUI{
+public class Interface extends JefXif.GUI{
     
     /**
      *
