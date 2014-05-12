@@ -1,6 +1,6 @@
 package pathfinder.gui;
 
-import rpg.gui.WindowController;
+import JefXif.WindowController;
 import javafx.scene.Node;
 import rpg.gui.MainController;
 

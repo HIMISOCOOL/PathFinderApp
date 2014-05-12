@@ -2,7 +2,7 @@ package pathfinder.gui;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import rpg.gui.WindowController;
+import JefXif.WindowController;
 import javafx.scene.Node;
 import rpg.gui.MainController;
 
@@ -15,7 +15,7 @@ public class OtherCharacterController extends WindowController {
 
     @FXML
     private void handleNewCharacterAction(ActionEvent event) {
-        this.mainController.windows.get(7).windowInView();
+        this.mainController.getWindows().get(7).windowInView();
     }
     
     public OtherCharacterController(MainController mainController, String FXML) {
