@@ -21,7 +21,7 @@ public class Interface extends GUI{
      */
     @Override
     public void initialize(Stage stage, String Title) throws Exception {
-        JefXif.GUI.Path = "/pathfinder/gui/";
+        JefXif.GUI.Path = "/pathfinder/data/editorGUI/";
         super.initialize(stage, Title);
 // Creates the scene and loads the main pane
         stage.setScene(super.createScene(loadMainPane()));
@@ -46,6 +46,7 @@ public class Interface extends GUI{
         l.setController(mainController);
         
         Pane mainPane = (Pane) l.load();
+        mainController.setMainPane(mainPane);
 
         return mainPane;
     }

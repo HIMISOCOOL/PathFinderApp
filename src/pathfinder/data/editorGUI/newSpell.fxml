@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<children>
+<Group layoutX="2.0" layoutY="-7.0">
+<children><Label layoutX="3.0" layoutY="18.0" prefHeight="17.0" prefWidth="92.0" text="School:" textAlignment="RIGHT">
+<padding>
+<Insets right="5.0" />
+</padding>
+</Label><ChoiceBox fx:id="cboSchool" layoutX="92.0" layoutY="14.0" prefWidth="150.0" /><Label layoutX="2.0" layoutY="48.0" prefWidth="92.0" text="Casting Time:" textAlignment="RIGHT">
+<padding>
+<Insets right="5.0" />
+</padding></Label><ChoiceBox fx:id="cboCastingTime" layoutX="92.0" layoutY="44.0" prefWidth="150.0" /><Label layoutX="3.2255859375" layoutY="73.5" prefWidth="92.0" text="Components:" textAlignment="RIGHT">
+<padding>
+<Insets right="5.0" />
+</padding>
+</Label><CheckBox fx:id="cbVerbal" layoutX="94.7890625" layoutY="73.5" mnemonicParsing="false" text="Verbal" /><CheckBox fx:id="cbSomantic" layoutX="157.0" layoutY="74.0" mnemonicParsing="false" text="Somantic" /><CheckBox fx:id="cbMaterial" layoutX="234.0" layoutY="74.0" mnemonicParsing="false" text="Material" /><CheckBox fx:id="cbFocus" layoutX="305.0" layoutY="74.0" mnemonicParsing="false" text="Focus" /><CheckBox fx:id="cbDivineFocus" layoutX="365.0" layoutY="74.0" mnemonicParsing="false" text="Divine Focus" /><Label layoutX="3.0" layoutY="99.0" prefHeight="17.0" prefWidth="92.0" text="Range:" textAlignment="RIGHT">
+<padding>
+<Insets right="5.0" />
+</padding>
+</Label><ChoiceBox fx:id="cboRange" layoutX="92.0" layoutY="95.0" prefWidth="150.0" /><Label layoutX="248.0" layoutY="99.0" prefHeight="17.0" prefWidth="94.0" text="Range Per Level:" textAlignment="RIGHT">
+<padding>
+<Insets right="5.0" />
+</padding>
+</Label><ChoiceBox layoutX="339.0" layoutY="95.0" prefHeight="25.0" prefWidth="118.0" /><Label layoutX="3.0" layoutY="125.0" prefHeight="17.0" prefWidth="92.0" text="Effect:" textAlignment="RIGHT">
+<padding>
+<Insets right="5.0" />
+</padding>
+</Label><TextField fx:id="txtEffect" layoutX="93.0" layoutY="121.0" prefHeight="25.0" prefWidth="363.0" /><Label layoutX="3.0" layoutY="151.0" prefHeight="17.0" prefWidth="92.0" text="Duration:" textAlignment="RIGHT">
+<padding>
+<Insets right="5.0" />
+</padding>
+</Label><ChoiceBox fx:id="cboDuration" layoutX="92.0" layoutY="147.0" prefWidth="150.0" /><CheckBox fx:id="cbDismissable" layoutX="252.2890625" layoutY="150.5" mnemonicParsing="false" text="Dismissable" /><Label layoutX="3.0" layoutY="178.0" prefHeight="17.0" prefWidth="92.0" text="SavingThrow:" textAlignment="RIGHT">
+<padding>
+<Insets right="5.0" />
+</padding>
+</Label><ChoiceBox fx:id="cboSavingThrow" layoutX="92.0" layoutY="174.0" prefWidth="150.0" /><Label layoutX="3.2255859375" layoutY="201.5" prefWidth="92.0" text="Spell Resistance:" textAlignment="RIGHT">
+<padding>
+<Insets right="5.0" />
+</padding>
+</Label><ChoiceBox fx:id="cboSpellResistance" layoutX="92.0" layoutY="201.0" prefWidth="150.0" /><Button layoutX="398.1875" layoutY="197.5" mnemonicParsing="false" text="Submit" />
+</children>
+</Group>
+</children></AnchorPane>

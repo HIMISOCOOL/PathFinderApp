@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Group layoutX="4.0" layoutY="-7.0">
+            <children>
+                <Label layoutX="9.0" layoutY="18.0" prefHeight="17.0" prefWidth="92.0" scaleX="1.15" scaleY="1.15" text="School:" textAlignment="RIGHT">
+                    <padding>
+                        <Insets right="5.0" />
+                    </padding>
+                </Label>
+                <Label fx:id="lblSchool" layoutX="129.0" layoutY="18.0" prefWidth="150.0" scaleX="1.15" scaleY="1.15" text="school" />
+                <Label layoutX="8.0" layoutY="48.0" prefWidth="92.0" scaleX="1.15" scaleY="1.15" text="Casting Time:" textAlignment="RIGHT">
+                    <padding>
+                        <Insets right="5.0" />
+                    </padding>
+                </Label>
+                <Label fx:id="lblCastingTime" layoutX="129.0" layoutY="46.0" prefWidth="150.0" scaleX="1.15" scaleY="1.15" text="school" />
+                <Label layoutX="9.2255859375" layoutY="73.5" prefWidth="92.0" scaleX="1.15" scaleY="1.15" text="Components:" textAlignment="RIGHT">
+                    <padding>
+                        <Insets right="5.0" />
+                    </padding>
+                </Label>
+                <CheckBox fx:id="cbVerbal" disable="true" layoutX="117.7890625" layoutY="73.5" mnemonicParsing="false" text="Verbal" />
+                <CheckBox fx:id="cbSomantic" disable="true" layoutX="180.0" layoutY="74.0" mnemonicParsing="false" text="Somantic" />
+                <CheckBox fx:id="cbMaterial" disable="true" layoutX="257.0" layoutY="74.0" mnemonicParsing="false" text="Material" />
+                <CheckBox fx:id="cbFocus" disable="true" layoutX="328.0" layoutY="74.0" mnemonicParsing="false" text="Focus" />
+                <CheckBox fx:id="cbDivineFocus" disable="true" layoutX="388.0" layoutY="74.0" mnemonicParsing="false" text="Divine Focus" />
+                <Label layoutX="9.0" layoutY="99.0" prefHeight="17.0" prefWidth="92.0" scaleX="1.15" scaleY="1.15" text="Range:" textAlignment="RIGHT">
+                    <padding>
+                        <Insets right="5.0" />
+                    </padding>
+                </Label>
+                <Label fx:id="lblRange" layoutX="121.0" layoutY="99.0" scaleX="1.15" scaleY="1.15" text="school" />
+                <Label layoutX="206.0" layoutY="99.0" prefHeight="17.0" prefWidth="94.0" scaleX="1.15" scaleY="1.15" text="Range Per Level:" textAlignment="RIGHT">
+                    <padding>
+                        <Insets right="5.0" />
+                    </padding>
+                </Label>
+                <Label layoutX="318.0" layoutY="99.0" scaleX="1.15" scaleY="1.15" text="school" />
+                <Label layoutX="9.0" layoutY="125.0" prefHeight="17.0" prefWidth="92.0" scaleX="1.15" scaleY="1.15" text="Effect:" textAlignment="RIGHT">
+                    <padding>
+                        <Insets right="5.0" />
+                    </padding>
+                </Label>
+                <Label fx:id="lblEffect" layoutX="122.0" layoutY="125.0" scaleX="1.15" scaleY="1.15" text="school" />
+                <Label layoutX="9.0" layoutY="151.0" prefHeight="17.0" prefWidth="92.0" scaleX="1.15" scaleY="1.15" text="Duration:" textAlignment="RIGHT">
+                    <padding>
+                        <Insets right="5.0" />
+                    </padding>
+                </Label>
+                <Label fx:id="lblDuration" layoutX="121.0" layoutY="151.0" scaleX="1.15" scaleY="1.15" text="school" />
+                <CheckBox fx:id="cbDismissable" disable="true" layoutX="171.2890625" layoutY="150.5" mnemonicParsing="false" text="Dismissable" />
+                <Label layoutX="9.0" layoutY="178.0" prefHeight="17.0" prefWidth="92.0" scaleX="1.15" scaleY="1.15" text="SavingThrow:" textAlignment="RIGHT">
+                    <padding>
+                        <Insets right="5.0" />
+                    </padding>
+                </Label>
+                <Label fx:id="lblSavingThrow" layoutX="121.0" layoutY="178.0" scaleX="1.15" scaleY="1.15" text="school" />
+                <Label layoutX="9.2255859375" layoutY="202.0" prefWidth="92.0" scaleX="1.15" scaleY="1.15" text="Spell Resistance:" textAlignment="RIGHT">
+                    <padding>
+                        <Insets right="5.0" />
+                    </padding>
+                </Label>
+                <Label fx:id="lblSpellResistance" layoutX="121.0" layoutY="202.0" scaleX="1.15" scaleY="1.15" text="school" />
+            </children>
+        </Group>
+    </children>
+</AnchorPane>

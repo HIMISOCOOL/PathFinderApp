@@ -1,7 +1,7 @@
 
 import javafx.application.Application;
 import javafx.stage.Stage;
-import rpg.gui.GUI;
+import rpg.gui.Interface;
 
 /**
  *
@@ -11,8 +11,8 @@ public class Run extends Application{
     
     @Override
     public void start(Stage stage) throws Exception {
-        GUI gui = new GUI();
-        gui.initialize(stage, "RPG App");
+        Interface gui = new Interface();
+        gui.initialize(stage, "Pathfinder Data Editor");
     }
     /**
      * @param args
