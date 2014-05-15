@@ -1,12 +1,12 @@
 package rpg.gui;
 
 import JefXif.WindowController;
+import JefXif.Controller;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.Node;
 import pathfinder.gui.*;
 
 /**
@@ -14,7 +14,7 @@ import pathfinder.gui.*;
  *
  * @author Matthew
  */
-public class MainController extends JefXif.MainController{
+public class MainController extends Controller{
     
     @FXML
     private void handleMenuAction(ActionEvent event) {

@@ -3,6 +3,8 @@ package pathfinder.gui;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import JefXif.WindowController;
+import java.net.URL;
+import java.util.ResourceBundle;
 import javafx.scene.Node;
 import rpg.gui.MainController;
 
@@ -26,4 +28,9 @@ public class OtherCharacterController extends WindowController {
     public void windowInView() {
         mainController.swapWindow((Node)getPane());
     }    
+
+    @Override
+    public void initialize(URL url, ResourceBundle resources) {
+        
+    }
 }
