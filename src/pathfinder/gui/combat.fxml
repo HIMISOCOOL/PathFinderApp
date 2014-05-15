@@ -47,7 +47,6 @@
             <TextField fx:id="txtRanges" layoutX="0.0" layoutY="22.0" prefWidth="220.0" text="Standard Ranged" />
             <TextField id="txtMelee" layoutX="0.0" layoutY="44.0" prefWidth="220.0" text="Power Attack" />
             <TextField id="txtRanges" layoutX="0.0" layoutY="66.0" prefWidth="220.0" text="Unarmed" />
-            <TextArea fx:id="txtStats" layoutX="0.0" layoutY="310.0" prefHeight="206.00009999999747" prefWidth="252.0" text="Attack bonuses&#10;Damage bonuses&#10;Any other bonuses&#10;Spell DCs" wrapText="true" />
           </children>
         </AnchorPane>
       </content>
@@ -158,13 +157,13 @@
             <Separator layoutX="141.0" layoutY="340.0" orientation="VERTICAL" prefHeight="122.0" />
             <Label font="$x1" layoutX="15.0" layoutY="470.0" text="Equipment" />
             <Label fx:id="lblCombatWeapon1" layoutX="15.0" layoutY="495.0" text="Weapon" />
-            <TextField fx:id="txtCombatWeapon1" layoutX="80.0" layoutY="495.0" prefWidth="180.0" />
+            <TextField fx:id="txtCombatWeapon1" layoutX="70.0" layoutY="495.0" prefWidth="150.0" />
             <Label fx:id="lblCombatShield" layoutX="15.0" layoutY="545.0" text="Shield" />
-            <TextField fx:id="txtCombatShield" layoutX="80.0" layoutY="545.0" prefWidth="180.0" />
-            <Label fx:id="lblCombatArmor" layoutX="15.0" layoutY="570.0" text="Label" />
-            <TextField fx:id="txtCombatArmor" layoutX="80.0" layoutY="570.0" prefWidth="180.0" />
+            <TextField fx:id="txtCombatShield" layoutX="70.0" layoutY="545.0" prefWidth="150.0" />
+            <Label fx:id="lblCombatArmor" layoutX="15.0" layoutY="570.0" text="Armor" />
+            <TextField fx:id="txtCombatArmor" layoutX="70.0" layoutY="570.0" prefWidth="150.0" />
             <Label fx:id="lblCombatWeapon2" layoutX="15.0" layoutY="520.0" text="Weapon" />
-            <TextField fx:id="txtCombatWeapon2" layoutX="80.0" layoutY="520.0" prefWidth="180.0" />
+            <TextField fx:id="txtCombatWeapon2" layoutX="70.0" layoutY="520.0" prefWidth="150.0" />
             <Label fx:id="lblCombatAttackMod" font="$x1" layoutX="15.0" layoutY="6.0" text="Attack Modifiers" />
             <TextField fx:id="txtCombatMeleeAttack" layoutX="80.0" layoutY="30.0" prefWidth="59.0" />
             <Label id="lblCombatMelee" fx:id="lblCombatMeleeAttack" labelFor="$txtCombatMeleeAttack" layoutX="16.0" layoutY="30.0" text="Melee" />
@@ -215,6 +214,10 @@
               </labelFor>
             </Label>
             <fx:reference source="txtCombatRangedDamage" />
+            <TextField fx:id="txtCombatWeapon1Damage" layoutX="223.0" layoutY="495.0" prefWidth="50.0" />
+            <TextField fx:id="txtCombatWeapon2Damage" layoutX="223.0" layoutY="520.0" prefWidth="50.0" />
+            <TextField fx:id="txtCombatShieldAC" layoutX="223.0" layoutY="545.0" prefWidth="50.0" />
+            <TextField fx:id="txtCombatArmorAC" layoutX="223.0" layoutY="570.0" prefWidth="50.0" />
           </children>
         </AnchorPane>
       </content>
