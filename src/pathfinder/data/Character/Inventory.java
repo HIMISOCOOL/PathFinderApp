@@ -7,8 +7,9 @@ import pathfinder.data.Items.Consumables;
 import pathfinder.data.Items.Weapon;
 
 /**
- * @author Matthew Meehan
- * A data class that stores the information about the items the character has on them and equipped
+ * @author Real Standard Studios - Matthew Meehan
+ * A data class that stores the information about the items the character 
+ * has on them and equipped
  */
 public class Inventory {
 
@@ -54,6 +55,9 @@ public class Inventory {
 		return weaponEquipped;
 	}
 
+        /**
+         * empty constructor for Kryo
+         */
 	public Inventory() {
 	}
 
@@ -63,6 +67,8 @@ public class Inventory {
 	 * @param consumables
 	 * @param armorWorn
 	 * @param weaponEquipped
+         * 
+         * Constructor for Inventory
 	 */
 	public Inventory(List<Armor> armor, List<Weapon> weapons,
 			List<Consumables> consumables, List<Armor> armorWorn,

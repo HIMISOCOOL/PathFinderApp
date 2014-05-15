@@ -5,6 +5,8 @@ import java.util.HashMap;
 import pathfinder.data.Attributes.AbilityName;
 
 /**
+ * 
+ * @Author Real Standard Studios - Matthew Meehan
  * @description The skill class
  */
 public class Skill {
@@ -14,12 +16,13 @@ public class Skill {
 	private boolean trained = false;
 	/**
 	 * this table is for when you get a bonus vs a certain event e.g- +2
-	 * perseption bonus for idenifing evil hats the string key identify's what
-	 * the bonus applies against. as you display the result of your skill check,
-	 * it also prints out the result against certan citera. it's up to the
-	 * player if that critera applies.
+	 * perception bonus for identifying evil hats, the string key 
+         * identifies what the bonus applies against. as you display the result 
+         * of your skill check, it also prints out the result against 
+         * certain criteria. it's up to the player if that criteria applies.
 	 */
-	private HashMap<String, Integer> situationalMod = new HashMap<String, Integer>();
+	private HashMap<String, Integer> situationalMod 
+                = new HashMap<String, Integer>();
 
 	/**
 	 * @return the rank
@@ -56,6 +59,9 @@ public class Skill {
 		return situationalMod;
 	}
 
+        /**
+         * Empty constructor for Kryo
+         */
 	public Skill() {
 	}
 
@@ -65,9 +71,11 @@ public class Skill {
 	 * @param name
 	 * @param trained
 	 * @param situationalMod
+         * 
+         * Constructor for Skill
 	 */
 	public Skill(int rank, AbilityName attrToUse, String name,
-			boolean trained, HashMap<String, Integer> situationalMod) {
+                     boolean trained, HashMap<String, Integer> situationalMod) {
 		this.rank = rank;
 		this.attrToUse = attrToUse;
 		this.name = name;

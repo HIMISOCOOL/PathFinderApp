@@ -28,6 +28,7 @@ public abstract class Feature {
 	
 	/**
 	 * @param name
+         * @param description
 	 */
 	public Feature(String name, String description) {
 		this.name = name;

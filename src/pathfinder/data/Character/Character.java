@@ -13,8 +13,9 @@ import pathfinder.data.Items.Shield;
 
 /**
  * 
- * @author Matthew Meehan
- * A class that represents the character as a whole, emulates the data from a character sheet
+ * @author Real Standard Studios - Matthew Meehan
+ * A class that represents the character as a whole, emulates the data from a 
+ * character sheet
  */
 public class Character {
 	private String name;
@@ -27,14 +28,16 @@ public class Character {
 	private Skill[] skills;
 	private Feat[] feats;
 	private Inventory inventory;
+        private Alignment alignment;
 
 	/**
-	 * get and set for this will need to take into account all of the relevant
-	 * bonus'
+	 * get and set for this will need to take into account all of the 
+         * relevant bonus
 	 */
 	private int armorClass;
 	/**
-	 * int between 0 and 2; 0 is slow track, 1 is medium track, 2 is fast track
+	 * int between 0 and 2; 0 is slow track, 1 is medium track, 
+         * 2 is fast track
 	 */
 	private int experienceTrack;
 	private int experienceValue;
@@ -258,7 +261,7 @@ public class Character {
 	/**
 	 * sets saveAttributes[1] which is reflex
 	 * 
-	 * @param fortitude
+	 * @param reflex
 	 */
 	public void setReflex(SaveAttribute reflex) {
 		this.saveAttributes[1] = reflex;
@@ -267,7 +270,7 @@ public class Character {
 	/**
 	 * sets saveAttributes[2] which is will
 	 * 
-	 * @param fortitude
+	 * @param will
 	 */
 	public void setWill(SaveAttribute will) {
 		this.saveAttributes[2] = will;
@@ -337,7 +340,8 @@ public class Character {
 	/**
 	 * sets armorClass with all of the components to add together
 	 * 
-	 * @param armorClass
+         * @param deflectionMod
+         * @param miscMod
 	 */
 	public void setArmorClass(int deflectionMod, int miscMod) {
 		int armorBonus=0, shieldBonus = 0;
@@ -347,7 +351,8 @@ public class Character {
 		}
 		this.armorClass = 10 + armorBonus + shieldBonus
 				+ this.getDexterity().getModifier()
-				+ this.race.getSize().getSizeModifier() + deflectionMod
+				+ this.race.getSize().getSizeModifier() 
+                                + deflectionMod
 				+ miscMod;
 	}
 
@@ -486,5 +491,19 @@ public class Character {
 	 */
 	public Character() {
 	}
+
+        /**
+         * @return the alignment
+         */
+        public Alignment getAlignment() {
+            return alignment;
+        }
+
+        /**
+        * @param alignment the alignment to set
+        */
+        public void setAlignment(Alignment alignment) {
+            this.alignment = alignment;
+        }
 
 }
